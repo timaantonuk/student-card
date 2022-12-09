@@ -234,14 +234,88 @@ body {
   transform: scale(1.2);
   box-shadow: 5px 5px 5px black;
 }
+.completed-courses__wrapper--mobile{
+  display: none;
+}
 
 /* media queries  */
 
 @media screen and (max-width: 500px) {
+  .header__heading{
+    font-size: 55px;
+  }
+  .goals-section__list_img{
+    height: 100px;
+    object-fit: cover;
+  }
   .header__photo img {
-    margin-top: 80px;
-    margin-left: 20px;
+    /* margin-top: 80px;
+    margin-left: 20px; */
     height: auto;
     width: 100%;
+    min-width: 94px;
+  }
+  .header__info{
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .header__wrapper{
+    flex-direction: column;
+  }
+  .header__info p{
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .time-section__heading{
+    font-size: 30px;
+  }
+  .time-section__text{
+  font-size: 20px;
+  }
+  .completed-courses__heading{
+    font-size: 30px;
+  }
+  .time-section{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .completed-courses__wrapper{
+    grid-template-columns: 1fr;
+  }
+  .completed-courses__wrapper{
+    display:none;
+  }
+  .completed-courses__wrapper--mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 900px;
+  }
+  .completed-courses__wrapper--mobile >div{
+    background-color: rgba(66, 163, 224, 0.3);
+    border-radius: 30px;
+    width: 70%;
+    min-height: 200px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+  .completed-courses__logo{
+    width: 100%;
+  }
+  .contacts__wrapper{
+    flex-direction: column;
+  }
+  .contacts__heading{
+    font-size: 30px;
+  }
+  .contacts__wrapper{
+    gap: 65px;
   }
 }
